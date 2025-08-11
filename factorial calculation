@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int factorial;
+int i;
+int factoria(int n){
+	factorial=1;
+	
+	for(i=1;i<n+1;i++){
+		factorial=factorial*i;
+		
+	}
+	return factorial;
+}
+int main(){
+	cout<<factoria(4);
+	return 0;
+}
