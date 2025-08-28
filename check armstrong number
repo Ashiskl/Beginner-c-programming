@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int reverse(int n){
+	int rev=0;
+	while(n>0){
+		int d =n%10;
+		rev=rev*10 + d;
+		n/=10;
+	}
+	return rev;
+}
+int main(){
+	int n;
+	cout<<"enter the value you want to check:- ";
+	cin>>n;
+	int v=reverse(n);
+	if(v==n){
+		cout<<"Yes, it is palindrom";
+	}
+	else{
+		cout<<"Not a palindrom";
+	}
+}
